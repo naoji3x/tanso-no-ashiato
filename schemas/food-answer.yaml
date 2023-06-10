@@ -1,0 +1,150 @@
+foodAnswer:
+  description: 食についての質問への回答
+  type: object
+  properties:
+    # 賞味期限切れなどで未使用の食品や食材を捨ててしまう頻度
+    foodDirectWasteFrequency:
+      description: 食料の廃棄量
+      type: string
+      enum:
+        - seldom
+        - 1-per-week
+        - 2-3-per-week
+        - 4-7-per-week
+        - 8-more-per-week
+        - unknown
+
+    # 食べ残しの頻度
+    foodLeftoverFrequency:
+      description: 食料の食べ残し量
+      type: string
+      enum:
+        - seldom
+        - 1-per-week
+        - 2-3-per-week
+        - 4-7-per-week
+        - 8-more-per-week
+        - unknown
+
+    # 1日の活動量（摂取カロリー量）はどのくらいですか？
+    foodIntake:
+      description: 食料摂取カロリー量
+      type: string
+      enum:
+        - very-little # 小学校低・中学年の子ども、高齢の女性
+        - somewhat-little # 座って過ごすことが多い女性、高齢の男性
+        - moderate # 軽い運動や立ち仕事がある女性、座って過ごすことが多い男性
+        - somewhat-much # 軽い運動や立ち仕事がある男性、運動習慣の多い女性
+        - very-much # 立ち仕事や移動、運動習慣の多い男性
+        - unknown # わからない
+
+    # どのくらいの頻度でお酒を飲みますか？（外食の場合も含む）
+    alcoholFrequency:
+      description: アルコールの摂取頻度
+      type: string
+      enum:
+        - everyday
+        - 4-5-per-week
+        - 2-3-per-week
+        - 1-per-week
+        - 2-3-less-per-month
+        - never
+        - unknown
+
+    # 乳製品、卵を食べる頻度
+    dairyFoodFrequency:
+      description: 乳製品の摂取頻度
+      type: string
+      enum:
+        - 3-more-per-day
+        - 2-per-day
+        - 1-per-day
+        - half-of-week
+        - 1-2-less-per-week
+        - never
+        - unknown
+
+    # 牛肉を食べる頻度
+    beefDishFrequency:
+      description: 牛肉料理の頻度
+      type: string
+      enum:
+        - everyday
+        - 4-5-per-week
+        - 2-3-per-week
+        - 1-per-week
+        - 2-3-per-month
+        - 1-less-per-month
+        - never
+        - unknown
+
+    # 豚肉を食べる頻度
+    porkDishFrequency:
+      description: 豚肉料理の頻度
+      type: string
+      enum:
+        - everyday
+        - 4-5-per-week
+        - 2-3-per-week
+        - 1-per-week
+        - 2-3-per-month
+        - 1-less-per-month
+        - never
+        - unknown
+
+    # 鶏肉を食べる頻度
+    chickenDishFrequency:
+      description: 鶏肉料理の頻度
+      type: string
+      enum:
+        - everyday
+        - 4-5-per-week
+        - 2-3-per-week
+        - 1-per-week
+        - 2-3-per-month
+        - 1-less-per-month
+        - never
+        - unknown
+
+    # 魚介を食べる頻度
+    seafoodDishFrequency:
+      description: 魚介料理の頻度
+      type: string
+      enum:
+        - everyday
+        - 4-5-per-week
+        - 2-3-per-week
+        - 1-per-week
+        - 2-3-per-month
+        - 1-less-per-month
+        - never
+        - unknown
+
+    # お酒以外の飲み物、お菓子類の1ヶ月の支出はどのくらいですか？
+    #（コーヒー、お茶、炭酸飲料、ノンアルコールビール、スイーツ、スナック類など）
+    # 家族の分もあわせて購入している場合、あなた自身が消費している分だけで考えましょう。
+    # 月間の合計金額
+    softDrinkSnackExpenses:
+      description: ソフトドリンクとスナックの支出
+      type: string
+      enum:
+        - 3k-less
+        - 3k-5k
+        - 5k-10k
+        - 10k-15k
+        - 15k-more
+        - unknown
+
+    # 1ヶ月の外食費はどのくらいですか？（惣菜、弁当、テイクアウトなどは除く）
+    # 家族の分もあわせて購入している場合、あなた自身が消費している分だけで考えましょう。
+    # 月間の合計金額
+    eatOutExpenses:
+      description: 外食の支出
+      type: string
+      enum:
+        - 5k-less
+        - 5k-10k
+        - 10k-20k
+        - 20k-50k
+        - 50k-more
+        - unknown

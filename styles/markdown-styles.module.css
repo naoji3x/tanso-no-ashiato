@@ -1,0 +1,48 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown li {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+}
+
+.markdown h2 {
+  font-weight: bold;
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h3 {
+  font-weight: bold;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown a {
+  color: blue; /* リンクの色を青に設定する */
+}
+
+.markdown a {
+  text-decoration: none; /* リンクの下線をなくす */
+}
+
+.markdown a:hover {
+  text-decoration: underline; /* リンクにホバーした際の下線を追加する */
+}
+
+.markdown a:active {
+  text-decoration: underline double; /* リンクをクリックした際の下線を太くする */
+}

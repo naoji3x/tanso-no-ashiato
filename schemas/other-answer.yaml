@@ -1,0 +1,118 @@
+otherAnswer:
+  description: モノとサービスについての質問への回答
+  type: object
+  properties:
+    # 過去１年間の宿泊を伴う旅行にかかった費用はいくらくらいですか？
+    # （交通費と飲食代は除く、宿泊費、施設利用料、入場料、観覧料など）
+    # 家族の分もあわせて支払っている場合、あなた自身が利用した分だけで考えましょう。
+    travelExpenses:
+      description: 旅行の支出
+      type: string
+      enum:
+        - '10k-less'
+        - '10k-30k'
+        - '30k-50k'
+        - '50k-100k'
+        - '100k-200k'
+        - '200k-more'
+        - 'unknown'
+
+    # 過去1年間の家電、家具などの大型な買い物の支出はどのくらいですか？
+    # 世帯の月間合計金額
+    applianceFurnitureExpenses:
+      description: 家電・家具の支出
+      type: string
+      enum:
+        - '50k-less'
+        - '50k-100k'
+        - '100k-200k'
+        - '200k-300k'
+        - '300k-400k'
+        - '400k-more'
+        - 'unknown'
+        - 'average-per-capita'
+
+    # 衣類、かばん、宝飾品、美容関連などの支出はどのくらいですか？
+    # あなた1人分の月間金額
+    clothesBeautyExpenses:
+      description: 衣服・美容の支出
+      type: string
+      enum:
+        - '5k-less'
+        - '5k-10k'
+        - '10k-20k'
+        - '20k-50k'
+        - '50k-more'
+        - 'unknown'
+
+    # 趣味にかかるの物の支出はどのくらいですか？
+    # （娯楽、書籍、雑誌、スポーツ、ペット、ガーデニング用品、たばこ含む）
+    # あなた1人分の月間金額
+    hobbyGoodsExpenses:
+      description: 趣味・日用品の支出
+      type: string
+      enum:
+        - '5k-less'
+        - '5k-10k'
+        - '10k-20k'
+        - '20k-50k'
+        - '50k-more'
+        - 'unknown'
+
+    # 医療、福祉、教育、塾などの習い事の支出はどのくらいですか？
+    # （保険料、美容関連の支出は除く）
+    # あなた1人分の月間金額
+    serviceExpenses:
+      description: サービスの支出
+      type: string
+      enum:
+        - '5k-less'
+        - '5k-10k'
+        - '10k-20k'
+        - '20k-50k'
+        - '50k-more'
+        - 'unknown'
+
+    # 日用消耗品の支出はどのくらいですか？
+    # （衛生用品・キッチン用品・文具など）
+    # 世帯の月間合計金額
+    dailyGoodsExpenses:
+      description: 日用品の支出
+      type: string
+      enum:
+        - '5k-less'
+        - '5k-10k'
+        - '10k-20k'
+        - '20k-30k'
+        - '30k-more'
+        - 'unknown'
+        - 'average-per-capita'
+
+    # レジャー、スポーツへの支出はどのくらいですか？
+    # （交通費と飲食代は除く、施設利用料、入場料、観覧料など）
+    # 家族の分もあわせて支払っている場合、あなた自身が利用した分だけで考えましょう。
+    # 月間合計金額
+    leisureSportsExpenses:
+      description: レジャー・スポーツに関わる支出
+      type: string
+      enum:
+        - '5k-less'
+        - '5k-10k'
+        - '10k-20k'
+        - '20k-50k'
+        - '50k-more'
+        - 'unknown'
+
+    # 通信費、放送受信料を合わせた支出はどのくらいですか？
+    # 世帯の月間合計金額
+    communicationExpenses:
+      description: 通信に関わる支出
+      type: string
+      enum:
+        - '5k-less'
+        - '5k-10k'
+        - '10k-20k'
+        - '20k-30k'
+        - '30k-more'
+        - 'unknown'
+        - 'average-per-capita'

@@ -1,0 +1,14 @@
+allOf:
+  - $ref: ./props.yaml
+
+  - properties:
+      $ref: ./housing-answer.yaml
+
+  - properties:
+      $ref: ./mobility-answer.yaml
+
+  - properties:
+      $ref: ./food-answer.yaml
+
+  - properties:
+      $ref: ./other-answer.yaml

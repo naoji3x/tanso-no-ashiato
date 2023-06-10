@@ -1,0 +1,82 @@
+mobilityAnswer:
+  description: 移動についての質問への回答
+  type: object
+  properties:
+    # 年間の走行距離を教えてください。あなたが乗車していない分は除く
+    privateCarAnnualMileage:
+      description: 自家用車の年間運転距離
+      type: number
+    # 最も使用する自動車の種類を教えてください
+    carType:
+      description: 車の種類
+      type: string
+      enum:
+        - gasoline
+        - light
+        - hv
+        - phv
+        - ev
+        - unknown
+
+    # 自動車に乗るとき、平均で何人が同じ車に乗リますか？（運転手を含む）
+    carPassengers:
+      description: 平均乗車人数
+      type: string
+      enum:
+        - '1'
+        - '1-2'
+        - '2'
+        - '2-3'
+        - '3'
+        - '3-4'
+        - '4-more'
+        - 'unknown'
+
+    # 電気自動車・プラグインハイブリッド車を自宅で充電しますか？
+    carCharging:
+      description: 充電方法
+      type: string
+      enum:
+        - charge-almost-at-home
+        - use-charging-spots-occasionally
+        - use-charging-spots-sometimes
+        - use-charging-spots-usually
+        - unknown
+
+    # 週間の移動時間は通勤等の時間
+    # 年間の移動時間は旅行等での長距離の移動時間
+
+    trainWeeklyTravelingTime:
+      description: 週間の電車での移動時間[hr]
+      type: number
+    trainAnnualTravelingTime:
+      description: 年間の電車での移動時間[hr]
+      type: number
+
+    busWeeklyTravelingTime:
+      description: 週間のバスでの移動時間[hr]
+      type: number
+    busAnnualTravelingTime:
+      description: 年間のバスでの移動時間[hr]
+      type: number
+
+    motorbikeWeeklyTravelingTime:
+      description: 週間のバイクでの移動時間[hr]
+      type: number
+    motorbikeAnnualTravelingTime:
+      description: 年間のバイクでの移動時間[hr]
+      type: number
+
+    otherCarWeeklyTravelingTime:
+      description: 週間のその他の車での移動時間[hr]
+      type: number
+    otherCarAnnualTravelingTime:
+      description: 年間のその他の車での移動時間[hr]
+      type: number
+
+    airplaneAnnualTravelingTime:
+      description: 年間の飛行機での移動時間[hr]
+      type: number
+    ferryAnnualTravelingTime:
+      description: 年間のフェリーでの移動時間[hr]
+      type: number

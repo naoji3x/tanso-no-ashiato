@@ -1,0 +1,113 @@
+housingAnswer:
+  description: 居住についての質問への回答
+  type: object
+  properties:
+    # あなたの家の部屋はいくつありますか？
+    housingSize:
+      description": 住居の広さ
+      type: string
+      enum:
+        - 1-room
+        - 2-room
+        - 3-room
+        - 4-room
+        - 5-6-room
+        - 7-more-room
+        - unknown
+
+    # あなたを含めて一緒に暮らしている人数を教えてください
+    residentCount:
+      description: 住居者数
+      type: number
+
+    # 現在住んでいる住居の建築年はいつ頃ですか？
+    housingInsulation:
+      description: 家の断熱
+      type: string
+      enum:
+        - no-insulation
+        - 2-level
+        - 3-level
+        - 4-level
+        - unknown
+
+    electricity:
+      description: 電力の使用量
+      type: object
+      properties:
+        # 自宅の電力は何を使用していますか？
+        electricityType:
+          description: 自宅での電力の種類
+          type: string
+          enum:
+            - conventional
+            - 30-renewable
+            - 50-renewable
+            - 100-renewable
+            - solar-panel
+            - unknown
+
+        # 1ヶ月の電力使用量はどのくらいですか？
+        monthlyConsumption:
+          description: 1ヶ月の電力使用量[kWh]
+          type: number
+
+        # 対象月
+        month:
+          description: 対象月
+          type: string
+          enum:
+            - january
+            - february
+            - march
+            - april
+            - may
+            - june
+            - july
+            - august
+            - september
+            - october
+            - november
+            - december
+
+    gas:
+      description: ガスの使用量
+      type: object
+      properties:
+        # 使用しているガスの種類を教えてください
+        item:
+          description: ガスの種類
+          type: string
+          enum:
+            - urban-gas # 都市ガス
+            - lpg # プロパンガス
+        # 1ヶ月のガス使用量はどのくらいですか？
+        monthlyConsumption:
+          type: number
+        # 対象月
+        month:
+          type: string
+          enum:
+            - january
+            - february
+            - march
+            - april
+            - may
+            - june
+            - july
+            - august
+            - september
+            - october
+            - november
+            - december
+
+    kerosene:
+      description: 灯油の使用量
+      type: object
+      properties:
+        # 昨シーズンの灯油の使用量はどのくらいですか？
+        monthlyConsumption:
+          type: number # L/月
+        # ヶ月/年
+        monthCount:
+          type: number

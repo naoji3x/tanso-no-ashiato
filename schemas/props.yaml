@@ -1,0 +1,137 @@
+title: Props
+
+properties:
+  title:
+    title: タイトル
+    description: プロフィールのタイトル
+    type: string
+    maxLength: 80
+  firstName:
+    title: 名
+    description: カーボンフットプリントの計算対象の人の名
+    type: string
+    maxLength: 80
+  lastName:
+    title: 苗字
+    description: カーボンフットプリントの計算対象の人の苗字
+    type: string
+    maxLength: 80
+  gender:
+    title: 性別
+    type: string
+    enum:
+      - male
+      - female
+      - unknown
+
+  age:
+    title: 年齢
+    type: string
+    enum:
+      - -10s
+      - 20s
+      - 30s
+      - 40s
+      - 50s
+      - 60s
+      - 70s-
+      - unknown
+  region:
+    title: お住まいの地域
+    type: string
+    enum:
+      - hokkaido
+      - tohoku
+      - kanto
+      - tokai
+      - kinki
+      - chugoku
+      - sikoku
+      - kyusyu
+      - okinawa
+      - unknown
+
+  tagline:
+    title: キャッチコピー
+    type: string
+
+  iconImage:
+    description: 対象者のアイコン画像
+    type: string
+
+  backgroundImage:
+    description: バックグランドの画像
+    type: string
+
+  date:
+    title: 投稿日
+    type: string
+
+  contentReferences:
+    title: 参考文献
+    type: array
+    items:
+      type: object
+      properties:
+        title:
+          type: string
+        url:
+          type: string
+
+  imageReferences:
+    title: 参考画像
+    type: array
+    items:
+      type: object
+      properties:
+        title:
+          type: string
+        url:
+          type: string
+
+  excerpt:
+    title: 概要
+    type: string
+
+  totalComment:
+    type: string
+    description: |
+      Comment for the result.
+
+  housingComment:
+    type: string
+    description: |
+      Comment for the housing result.
+
+  mobilityComment:
+    type: string
+    description: |
+      Comment for the mobility result.
+
+  foodComment:
+    type: string
+    description: |
+      Comment for the food result.
+
+  otherComment:
+    type: string
+    description: |
+      Comment for the other result.
+
+required:
+  - title
+  - firstName
+  - lastName
+  - age
+  - gender
+  - region
+  - tagline
+  - excerpt
+  - totalComment
+  - housingComment
+  - mobilityComment
+  - foodComment
+  - otherComment
+  - iconImage
+  - backgroundImage
+  - date
