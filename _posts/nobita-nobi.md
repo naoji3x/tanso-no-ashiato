@@ -15,11 +15,14 @@ foodComment: 牛肉がご馳走の時代なので滅多に食べない想定で�
 otherComment: 小学生ですので出費は最低限です。お小遣いは月500円ぐらいでしょうか。
 iconImage: /images/green-avatar.svg
 backgroundImage: /assets/posts/nobita-nobi/kyo-azuma-x_TJKVU1FJA-unsplash.jpg
-date: '2020-03-16T05:35:07.322Z'
+date: '2023-06-11T11:00:00'
 contentReferences:
-  - { title: 野比家の間取り, url: https://www.homes.co.jp/cont/living/living_00324/ }
-  - { title: ドラワークス, url: https://doraworks.jp/blog/grade/ }
-imageReferences: []
+  - <a href="https://www.homes.co.jp/cont/living/living_00324/">野比家の間取り</a>
+  - <a href="https://doraworks.jp/blog/grade/">ドラワークス</a>
+  -  <a href="https://www.env.go.jp/content/000122579.pdf">令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）</a>
+imageReferences:
+  - 背景:<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/x_TJKVU1FJA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/de/@tokyo_boy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">kyo azuma</a>が撮影した写真
+  
 
 housingAnswer:
   housingSize: 4-room
@@ -85,7 +88,7 @@ otherAnswer:
 
 ## はじめに
 
-昭和の家に住む一人っ子といえば野比のび太くんです。小学生ですので消費が少なく、それに応じて排出量も少なくなっています。見事3トンの目標を達成しました！一方で、逆の見方をすると、小学生のような生活を送らないと3トンの目標は達成が難しい、ということでもあります。各種前提条件は、[住まいのお役立ち情報](https://www.homes.co.jp/cont/living/living_00324/)、[ドラワークス](https://doraworks.jp/blog/grade/)から、画像の出典は[テレビ朝日 ドラえもん](https://www.tv-asahi.co.jp/doraemon/)になります。
+昭和の家に住む一人っ子といえば野比のび太くんです。小学生ですので消費が少なく、それに応じて排出量も少なくなっています。見事3トンの目標を達成しました！一方で、逆の見方をすると、小学生のような生活を送らないと3トンの目標は達成が難しい、ということでもあります。各種前提条件は、[住まいのお役立ち情報](https://www.homes.co.jp/cont/living/living_00324/)、[ドラワークス](https://doraworks.jp/blog/grade/) を参考にしています。
 
 ## 前提条件
 

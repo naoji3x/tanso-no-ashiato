@@ -26,11 +26,6 @@ import {
   TravelExpenses
 } from 'cfp-calc'
 
-export type Reference = {
-  title: string
-  url: string
-}
-
 export type Housing = {
   readonly housingSize?: HousingSize
   readonly residentCount?: number
@@ -108,8 +103,8 @@ type Post = {
   readonly foodComment: string
   readonly otherComment: string
 
-  readonly contentReferences: Reference[]
-  readonly imageReferences: Reference[]
+  readonly contentReferences: string[]
+  readonly imageReferences: string[]
 
   readonly content: string
 

@@ -19,7 +19,7 @@ type Props = {
   allPosts: Post[]
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps = () => {
   const allPosts = getAllPosts()
   return {
     props: { allPosts }

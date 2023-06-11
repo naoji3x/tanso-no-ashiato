@@ -15,11 +15,13 @@ foodComment: ランチはほぼ外食、夜も加持さんと居酒屋で一杯�
 otherComment: 仕事人間で趣味は少なく、洋服もNERVから制服が支給されるため安上がりです。
 iconImage: /assets/posts/misato-katsuragi/misato-katsuragi.png
 backgroundImage: /assets/posts/misato-katsuragi/kunal-sahu-ieHfF8tDyn8-unsplash.jpg
-date: '2020-03-16T05:35:07.322Z'
+date: '2023-06-11T11:00:02'
 contentReferences:
-  - { title: 'Wikipedia（葛城ミサト）', url: https://ja.wikipedia.org/wiki/%E8%91%9B%E5%9F%8E%E3%83%9F%E3%82%B5%E3%83%88 }
-  - { title: 'Wikipedia（第３新東京）', url: https://ja.wikipedia.org/wiki/%E7%AC%AC3%E6%96%B0%E6%9D%B1%E4%BA%AC%E5%B8%82 }
-imageReferences: []
+  - <a href="https://ja.wikipedia.org/wiki/%E8%91%9B%E5%9F%8E%E3%83%9F%E3%82%B5%E3%83%88">Wikipedia（葛城ミサト）</a>
+  - <a href="https://ja.wikipedia.org/wiki/%E7%AC%AC3%E6%96%B0%E6%9D%B1%E4%BA%AC%E5%B8%82">Wikipedia（第３新東京）</a>
+  -  <a href="https://www.env.go.jp/content/000122579.pdf">令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）</a>
+imageReferences:
+  - 背景：<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/ieHfF8tDyn8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@kunalsahu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kunal Sahu</a>が撮影した写真
 
 housingAnswer:
   housingSize: 4-room
@@ -84,16 +86,14 @@ otherAnswer:
 
 ## はじめに
 
-第３新東京の生活を推定すべく、葛城ミサトさんにモデルになってもらいました。各種前提条件は[Wikipedia](https://ja.wikipedia.org/wiki/%E8%91%9B%E5%9F%8E%E3%83%9F%E3%82%B5%E3%83%88)を参考にしています。
-
-また、プロフィール画像については、[『エヴァンゲリオン』シリーズのファン創作物の公開に関するガイドライン](https://www.khara.co.jp/guideline/)に基づき、
+第３新東京の生活を推定すべく、葛城ミサトさんにモデルになってもらいました。各種前提条件は[Wikipedia](https://ja.wikipedia.org/wiki/%E8%91%9B%E5%9F%8E%E3%83%9F%E3%82%B5%E3%83%88)を参考にしています。また、プロフィール画像については、[『エヴァンゲリオン』シリーズのファン創作物の公開に関するガイドライン](https://www.khara.co.jp/guideline/)に基づき、
 
 1. 個人のファン活動としての創作物を、無償・非商用で公開
 2. 全年齢向けSNS一般で公開（[総務省の定義](https://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/service/07.html)によるとGitHubもSNSと考えられるため、GitHubで公開）
 
-として、ファン創作物の一環としてミサトさんを描きました。
+として、ファン創作物の一環として描きました。
 
-第３新東京はグリーン電力が普及しており、電力は100%再生可能エネルギー、車も基本はEVという前提で考えてみました。その割には3トンを達成できておらず、生活様式の見直しが必要そうです。
+第３新東京はグリーン電力が普及しており、電力は100%再生可能エネルギー、車も基本はEVという前提にしています。その割には3トンを達成できておらず、生活様式の見直しが必要そうです。
 
 ## 前提条件
 
@@ -111,7 +111,7 @@ otherAnswer:
 
 ### 食
 
-料理はあまり得意ではなく、ご飯はシンジとアスカと当番制になっているようです。ただし、不規則な勤務のため外食が多く、ランチもほぼ外食と想定としました。夜は加持さんと居酒屋で一杯、となるとかなりの出費です。
+料理はあまり得意ではなく、ご飯はシンジとアスカと当番制になっているようです。ただし、不規則な勤務のため外食が多く、ランチもほぼ外食と想定としました。夜は加持さんと居酒屋で一杯、となると、かなりの出費です。
 
 ### モノとサービス
 

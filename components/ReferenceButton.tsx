@@ -3,7 +3,6 @@ import {
   Button,
   ButtonProps,
   Heading,
-  Link,
   ListItem,
   Modal,
   ModalBody,
@@ -15,15 +14,11 @@ import {
   OrderedList,
   useDisclosure
 } from '@chakra-ui/react'
-
-type Reference = {
-  title: string
-  url: string
-}
+import parse from 'html-react-parser'
 
 type Props = {
-  readonly contentReferences: readonly Reference[]
-  readonly imageReferences: readonly Reference[]
+  readonly contentReferences: readonly string[]
+  readonly imageReferences: readonly string[]
 }
 
 const ReferenceButton = ({
@@ -43,8 +38,8 @@ const ReferenceButton = ({
         <ModalContent>
           <ModalHeader>情報の出典元</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
-            <Box pb={5}>以下の出典元を参考にしています。</Box>
+          <ModalBody sx={{ a: { color: 'blue' } }}>
+            <Box pb={5}>以下を参考にしています。</Box>
             <Box py={2}>
               <Heading size={'md'} py={1}>
                 参考文献
@@ -53,30 +48,22 @@ const ReferenceButton = ({
                 'なし'
               ) : (
                 <OrderedList>
-                  {contentReferences.map((ref) => (
-                    <ListItem key={ref.url}>
-                      <Link href={ref.url} color={'blue'}>
-                        {ref.title}
-                      </Link>
-                    </ListItem>
+                  {contentReferences.map((ref, index) => (
+                    <ListItem key={index}>{parse(ref)}</ListItem>
                   ))}
                 </OrderedList>
               )}
             </Box>
             <Box py={2}>
               <Heading size={'md'} py={1}>
-                画像引用
+                画像出典
               </Heading>
               {imageReferences.length === 0 ? (
                 'なし'
               ) : (
                 <OrderedList>
-                  {imageReferences.map((ref) => (
-                    <ListItem key={ref.url}>
-                      <Link href={ref.url} color={'blue'}>
-                        {ref.title}
-                      </Link>
-                    </ListItem>
+                  {imageReferences.map((ref, index) => (
+                    <ListItem key={index}>{parse(ref)}</ListItem>
                   ))}
                 </OrderedList>
               )}

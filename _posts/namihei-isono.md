@@ -15,18 +15,14 @@ foodComment: ほぼ国民平均と傾向は同じですが、ノリスケおじ�
 otherComment: 囲碁、盆栽、釣り、俳句、書、ゴルフ、骨董品と多趣味なため、趣味用品費用が大きいです。
 iconImage: /images/gray-avatar.svg
 backgroundImage: /assets/posts/namihei-isono/linmiao-xu-hC33lVuI_co-unsplash.jpg
-date: '2020-03-16T05:35:07.322Z'
+date: '2023-06-11T11:00:01'
 contentReferences:
-  - { title: イソラボ, url: https://iso-labo.com/labo/sazae-san.html#sazae09 }
-  - {
-      title: 令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）,
-      url: https://www.env.go.jp/content/000122579.pdf
-    }
-  - {
-      title: Yahoo! JAPAN 知恵袋,
-      url: https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12111688952
-    }
-imageReferences: []
+  -  <a href="https://iso-labo.com/labo/sazae-san.html#sazae09">イソラボ</a>
+  -  <a href="https://www.env.go.jp/content/000122579.pdf">令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）</a>
+  -  <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12111688952">Yahoo! JAPAN 知恵袋</a>
+imageReferences: 
+  - 背景:<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/hC33lVuI_co?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@linrock?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Linmiao Xu</a>が撮影した写真
+  
 
 housingAnswer:
   housingSize: 5-6-room

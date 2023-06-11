@@ -4,8 +4,7 @@ import Layout from 'components/Layout'
 import PostBody from 'components/PostBody'
 import PostHeader from 'components/PostHeader'
 import Questionary from 'components/Questionary'
-import { getAllPosts, getPostBySlug } from 'lib/api'
-import markdownToHtml from 'lib/markdownToHtml'
+import { contentToHtml, getAllPosts, getPostBySlug } from 'lib/api'
 import url from 'lib/url'
 import ErrorPage from 'next/error'
 import { useRouter } from 'next/router'
@@ -93,14 +92,11 @@ type Params = {
 
 export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug)
-  const content = await markdownToHtml(post.content || '')
+  // const content = await markdownToHtml(post.content || '')
 
   return {
     props: {
-      post: {
-        ...post,
-        content
-      }
+      post: await contentToHtml(post)
     }
   }
 }

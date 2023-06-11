@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { join } from 'path'
 import Post from '../interfaces/post'
 import convertToAnswers from './answers'
+import markdownToHtml from './markdownToHtml'
 
 const postsDirectory = join(process.cwd(), '_posts')
 
@@ -116,4 +117,13 @@ export const getAllPosts = (): Post[] => {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
+}
+
+export const contentToHtml = async (post: Post): Promise<Post> => {
+  const content = await markdownToHtml(post.content || '')
+
+  return {
+    ...post,
+    content
+  }
 }

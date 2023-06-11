@@ -71,23 +71,13 @@ properties:
     title: 参考文献
     type: array
     items:
-      type: object
-      properties:
-        title:
-          type: string
-        url:
-          type: string
+      type: string
 
   imageReferences:
     title: 参考画像
     type: array
     items:
-      type: object
-      properties:
-        title:
-          type: string
-        url:
-          type: string
+      type: string
 
   excerpt:
     title: 概要
