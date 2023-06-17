@@ -13,6 +13,7 @@ import Hero from 'components/Hero'
 import Layout from 'components/Layout'
 import Showcase from 'components/Showcase'
 import Post from 'interfaces/post'
+import featured from 'public/featured.json'
 import { getAllPosts } from '../lib/api'
 
 type Props = {
@@ -46,7 +47,14 @@ const Index = ({ allPosts }: Props) => (
 export default Index
 
 const Featured = ({ allPosts }: Props) => {
-  const firstThree = allPosts.slice(0, 3)
+  let featuredThree = []
+  for (const slug of featured) {
+    const post = allPosts.find((post) => slug === post.slug)
+    if (post !== undefined) {
+      featuredThree.push(post)
+    }
+  }
+
   return (
     <VStack>
       <Flex mt={{ base: '-50px', md: '-100px', lg: '-150px' }} w={'full'}>
@@ -56,7 +64,7 @@ const Featured = ({ allPosts }: Props) => {
           w={'full'}
           spacing={{ base: '55px', lg: '20px' }}
         >
-          {firstThree.map((post: Post) => (
+          {featuredThree.map((post: Post) => (
             <FeaturedPostPreview key={post.slug} post={post} />
           ))}
         </Stack>
