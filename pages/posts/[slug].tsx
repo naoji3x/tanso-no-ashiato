@@ -34,7 +34,7 @@ export default function Post({ post, morePosts, preview }: Props) {
         backgroundSize={'cover'}
         backgroundPosition={'center center'}
       >
-        <Box w={'full'} bgColor={'blackAlpha.600'} />
+        <Box w={'full'} bgColor={'blackAlpha.500'} />
       </Flex>
 
       <Flex bg={'gray.200'}>

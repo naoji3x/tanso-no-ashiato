@@ -20,6 +20,7 @@ contentReferences:
   - <a href="https://www.homes.co.jp/cont/living/living_00324/">野比家の間取り</a>
   - <a href="https://doraworks.jp/blog/grade/">ドラワークス</a>
   -  <a href="https://www.env.go.jp/content/000122579.pdf">令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）</a>
+  -  <a href="https://kepco.jp/gas/consumption/">関西電力 一般家庭のガス平均使用量</a>
 imageReferences:
   - 背景:<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/x_TJKVU1FJA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/de/@tokyo_boy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">kyo azuma</a>が撮影した写真
   
@@ -32,18 +33,19 @@ housingAnswer:
     electricityType: conventional
     monthlyConsumption: 320
     month: may
-  # 令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）の関東甲信越のm3/世帯・年が269
-  # 12で割って平均値を出して、1世代分相当として、269 / 12 ≒ 23とした。
-  # https://www.env.go.jp/content/000122579.pdf
+  # 以下を参考に3人家族の場合は34m3とした。
+  # https://kepco.jp/gas/consumption/
   gas:
     item: urban-gas
-    monthlyConsumption: 23
+    monthlyConsumption: 34
     month: may
-  # 令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）の関東甲信越のL/世帯・年が74
+  # 令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）の関東甲信越のL/世帯・年が74L
   # https://www.env.go.jp/content/000122579.pdf
-  # 4ヶ月使うとして、74 / 4 = 19
+  # 関東にすると少し範囲が広いので、以下を参考に、東京は21.3L/年とした。
+  # https://47todofuken-ranking.com/toyu/#google_vignette
+  # 4ヶ月使うとして、21.3 / 4 ≒ 5.3L/月
   kerosene:
-    monthlyConsumption: 19
+    monthlyConsumption: 5.3
     monthCount: 4
 
 mobilityAnswer:
@@ -98,7 +100,7 @@ otherAnswer:
 
 - **電気使用量**: 関東甲信越の電気使用量は3,767kWh/世帯・年。12ヶ月で割って月平均を算出し、1世帯分相当として、3,767kWh / 12 ヶ月 x 1世帯 ≒ 320kWh/月としました。また、対象月は平均値に近いと想定される５月の実績としました。
 
-- **ガス使用量**: 都市ガスを使っていると想定。関東甲信越の都市ガス使用量は269m3/世帯・年で、12ヶ月で割って月平均を算出し、1世代分相当として、269m3 / 12ヶ月 x 1世帯 ≒ 23m3/月としました。また、対象月は平均値に近いと想定される５月の実績としました。
+- **ガス使用量**: 都市ガスを使っていると想定。[関西電力 一般家庭のガス平均使用量](https://kepco.jp/gas/consumption)より、3人家族のガス平均使用量から34m3/月としました。また、対象月は平均値に近いと想定される５月の実績としました。
 
 - **灯油使用量**: 関東甲信越の灯油使用量は74L/世帯・年で4ヶ月使うとして、74L / 4ヶ月 * 1世帯 = 19L/月としました。
 

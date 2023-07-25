@@ -24,6 +24,7 @@ contentReferences:
   -  <a href="https://harikirimaruko.net/totoromadori/">はりきりマルコの〇〇な話</a>
   -  <a href="https://www.enecho.meti.go.jp/about/whitepaper/2020html/2-1-4.html">資源エネルギー庁</a>
   -  <a href="https://sho-waretorokennkyuujyo.com/ghiblimesi-tonarinototoro-satsukisbenntou/">昭和レトロ研究所</a>
+  - <a href="https://47todofuken-ranking.com/toyu/#google_vignette">都道府県別の灯油の消費量ランキング</a>
 imageReferences: 
   - プロフィール:<a href="https://www.ghibli.jp/works/totoro/#frame"> &copy; STUDIO GHIBLI Inc.</a>
   - 背景:<a href="https://www.ghibli.jp/works/totoro/#frame"> &copy; STUDIO GHIBLI Inc.</a>
@@ -50,9 +51,12 @@ housingAnswer:
 
   # 令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）の関東甲信越のL/世帯・年が74
   # https://www.env.go.jp/content/000122579.pdf
-  # 4ヶ月使うとして、74 / 4 * 2 = 37、実際には薪を使っているので、この1/10としました。
+  # 関東にすると少し範囲が広いので、以下を参考に、埼玉は44.5L/年とした。
+  # https://47todofuken-ranking.com/toyu/#google_vignette
+  # 4ヶ月使うとして、44.5 / 4 ≒ 11L/月
+  # 薪なので上記の1/10、12ヶ月使うとしました。
   kerosene:
-    monthlyConsumption: 3.7
+    monthlyConsumption: 1.1
     monthCount: 12
 
 mobilityAnswer:
@@ -119,7 +123,8 @@ otherAnswer:
 
 - **ガス使用量**: 薪を使っているので0としました。
 
-- **灯油使用量**: 薪を使っているので0ですが、薪からのCO2発生もありますので、灯油換算で、電気と同様1/10の量としました（1/10の根拠は薄いです）。関東甲信越の灯油使用量は74L/世帯・年。4 ヶ月使うとして、74L / 4ヶ月 * 2世帯 = 37L/月、この1/10で3.7L/月としています。また、利用期間は1年なので12ヶ月としています。
+- **灯油使用量**: 薪を使っているので0ですが、薪からのCO2発生もありますので、灯油換算で、電気と同様1/10の量としました（1/10の根拠は薄いです）。
+[都道府県別の灯油の消費量ランキング](https://47todofuken-ranking.com/toyu/#google_vignette")を参考に、埼玉の灯油平均使用量は44.5L/年、4ヶ月使うとし、44.5L / 4ヶ月 * 1世帯 ≒ 11L/月、この1/10で1.1L/月としています。また、利用期間は1年なので12ヶ月としています。
 
 ### 移動
 
@@ -135,4 +140,4 @@ otherAnswer:
 
 ## 考察
 
-今（2023年）から高々70年前ですが、あらためて検証してみると生活スタイルとカーボンフットプリントが大きく変化していることがわかります。それだけ社会が発展したということですが、果たしてその発展した分の幸せが享受できているか、タツオさんの笑顔をみると考えさせられます。
+今（2023年）から高々70年前ですが、あらためて検証してみると生活スタイルとカーボンフットプリントが大きく変化していることがわかります。それだけ社会が発展したということですが、果たしてその発展した分の幸せが享受できているか、タツオさんの生活を見ると考えさせられます。

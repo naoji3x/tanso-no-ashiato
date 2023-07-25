@@ -9,7 +9,7 @@ region: kanto
 tagline: 日本を代表する昭和の大家族のフットプリントは？
 excerpt: さすが、波平さん、約5トンと日本平均約７トンに比べるとだいぶ少なく、目標約3トンに向けて中間地点の排出量です。
 totalComment: 二世帯住宅７人同居、マイカーなし、だけあって住居と移動に関する排出量が少ないですね。
-housingComment: 二世帯７人同居なので、5LDKの豪邸でも一人当たりの排出量は少なくなります。ここで、-1.18トン稼いでいます。
+housingComment: 二世帯７人同居なので、5LDKの豪邸でも一人当たりの排出量は少なくなります。ここで、約-1トン稼いでいます。
 mobilityComment: マイカーなし、ですので、その分電車の比重が大きくなっています。
 foodComment: ほぼ国民平均と傾向は同じですが、ノリスケおじさんに奢る分、外食費用がかさんでいます。
 otherComment: 囲碁、盆栽、釣り、俳句、書、ゴルフ、骨董品と多趣味なため、趣味用品費用が大きいです。
@@ -19,7 +19,9 @@ date: '2023-06-11T11:00:01'
 contentReferences:
   -  <a href="https://iso-labo.com/labo/sazae-san.html#sazae09">イソラボ</a>
   -  <a href="https://www.env.go.jp/content/000122579.pdf">令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）</a>
+  -  <a href="https://kepco.jp/gas/consumption/">関西電力 一般家庭のガス平均使用量</a>
   -  <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12111688952">Yahoo! JAPAN 知恵袋</a>
+  -  <a href="https://47todofuken-ranking.com/toyu/#google_vignette">都道府県別の灯油の消費量ランキング</a>
 imageReferences: 
   - 背景:<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/hC33lVuI_co?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@linrock?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Linmiao Xu</a>が撮影した写真
   
@@ -35,21 +37,22 @@ housingAnswer:
   electricity:
     electricityType: conventional
     monthlyConsumption: 630
-    month: may #平均は5月とした。
+    month: may # 平均は5月とした。
 
-  # 令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）の関東甲信越のm3/世帯・年が24
-  # 12で割って平均値を出して、2世代分相当として、24 / 12 * 2 = 4とした。
-  # https://www.env.go.jp/content/000122579.pdf
+  # 以下を参考に3人家族の場合は43m3とした。
+  # https://kepco.jp/gas/consumption/
   gas:
-    item: lpg
-    monthlyConsumption: 4
-    month: may #平均は5月とした。
+    item: urban-gas
+    monthlyConsumption: 43
+    month: may
 
   # 令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）の関東甲信越のL/世帯・年が74
   # https://www.env.go.jp/content/000122579.pdf
-  # 4ヶ月使うとして、74 / 4 * 2 = 37
+  # 関東にすると少し範囲が広いので、以下を参考に、東京は21.3L/年とした。
+  # https://47todofuken-ranking.com/toyu/#google_vignette
+  # 4ヶ月使うとし、21.3 / 4 * 2世帯 ≒ 10.7L/月
   kerosene:
-    monthlyConsumption: 37
+    monthlyConsumption: 10.7
     monthCount: 4
 
 mobilityAnswer:
@@ -109,9 +112,9 @@ otherAnswer:
 
 - **電気使用量**: 関東甲信越の電気使用量は3,767kWh/世帯・年。12ヶ月で割って平均値を算出して、2世帯分相当として、3,767kWh / 12 ヶ月 x 2世帯 ≒ 630kWh/月としました。また、対象月は平均値に近いと想定される５月の実績としました。
 
-- **ガス使用量**: 都市ガスではなくLPGを使っていると想定。関東甲信越のLPG使用量は24m3/世帯・年。12ヶ月で割って平均値を算出して、2世代分相当として、24m3 / 12ヶ月 x 2世帯 = 4m3/月としました。また、対象月は平均値に近いと想定される５月の実績としました。
+- **ガス使用量**: 都市ガスを使っていると想定。[関西電力 一般家庭のガス平均使用量](https://kepco.jp/gas/consumption)より、4人家族以上のガス平均使用量から43m3/月としました。また、対象月は平均値に近いと想定される５月の実績としました。
 
-- **灯油使用量**: 関東甲信越の灯油使用量は74L/世帯・年。4 ヶ月使うとして、74L / 4ヶ月 * 2世帯 = 37L/月としました。
+- **灯油使用量**: [都道府県別の灯油の消費量ランキング](https://47todofuken-ranking.com/toyu/#google_vignette)参考に、東京の平均灯油使用量は21.3L/年とし、4ヶ月使うとし、21.3L / 4ヶ月 * 2世帯 ≒ 10.7L/月としました。
 
 ### 移動
 
