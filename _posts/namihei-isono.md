@@ -13,7 +13,7 @@ housingComment: 二世帯７人同居なので、5LDKの豪邸でも一人当た
 mobilityComment: マイカーなし、ですので、その分電車の比重が大きくなっています。
 foodComment: ほぼ国民平均と傾向は同じですが、ノリスケおじさんに奢る分、外食費用がかさんでいます。
 otherComment: 囲碁、盆栽、釣り、俳句、書、ゴルフ、骨董品と多趣味なため、趣味用品費用が大きいです。
-iconImage: /images/gray-avatar.svg
+iconImage: /assets/posts/namihei-isono/namihei-isono.png
 backgroundImage: /assets/posts/namihei-isono/linmiao-xu-hC33lVuI_co-unsplash.jpg
 date: '2023-06-11T11:00:01'
 contentReferences:
@@ -23,6 +23,7 @@ contentReferences:
   -  <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12111688952">Yahoo! JAPAN 知恵袋</a>
   -  <a href="https://47todofuken-ranking.com/toyu/#google_vignette">都道府県別の灯油の消費量ランキング</a>
 imageReferences: 
+  - プロフィール:<a href="https://www.google.com/maps/place/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E9%8A%85%E5%83%8F/@35.6317165,139.6441964,20.04z/data=!4m6!3m5!1s0x6018f47be94aca91:0xe16ce761dab7c4c9!8m2!3d35.6316712!4d139.6442523!16s%2Fg%2F11cjgd8_b6?entry=ttu">波平さんの銅像</a>
   - 背景:<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/hC33lVuI_co?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@linrock?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Linmiao Xu</a>が撮影した写真
   
 
@@ -99,7 +100,7 @@ otherAnswer:
 
 ## はじめに
 
-日本を代表するお父さん（お爺さん）キャラクター、磯野波平さんのカーボンフットプリントを推定しました。各種前提条件は、[イソラボ](https://iso-labo.com/labo/sazae-san.html#sazae09)、[令和３年度家庭部門の CO2 排出実態統計調査資料編（確報値）](https://www.env.go.jp/content/000122579.pdf)、[Yahoo! JAPAN 知恵袋](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12111688952)、を参考にしています。
+日本を代表するお父さん（お爺さん）キャラクター、磯野波平さんのカーボンフットプリントを推定しました。各種前提条件は、[イソラボ](https://iso-labo.com/labo/sazae-san.html#sazae09)、[令和３年度家庭部門の CO2 排出実態統計調査資料編（確報値）](https://www.env.go.jp/content/000122579.pdf)、[Yahoo! JAPAN 知恵袋](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12111688952)、を参考にしています。なお、プロフィール画像は[世田谷区桜新町のそばにある波平さんの銅像](https://www.google.com/maps/place/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93%E9%8A%85%E5%83%8F/@35.6317165,139.6441964,20.04z/data=!4m6!3m5!1s0x6018f47be94aca91:0xe16ce761dab7c4c9!8m2!3d35.6316712!4d139.6442523!16s%2Fg%2F11cjgd8_b6?entry=ttu)になります。[銅像のようなパブリックアートは非商用であれば使って良さそう](https://manga-factory.net/column/4761)ですので活用させて頂きました。
 
 波平さん時代の昭和のカーボンフットプリントを求めるというよりは、波平さんが現在社会で同じ生活を送ったら、どのくらいの排出量になるかを推定しています。
 
