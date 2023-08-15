@@ -29,7 +29,7 @@ const PostPreview = ({
 }: Props & BoxProps) => {
   return (
     <Box {...rest}>
-      <Center py={12}>
+      <Center py={1}>
         <VStack>
           <Box
             position="relative"

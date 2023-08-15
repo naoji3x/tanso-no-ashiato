@@ -1,4 +1,12 @@
-import { Box, Center, Flex, HStack, Heading, Icon } from '@chakra-ui/react'
+import {
+  Box,
+  Center,
+  Flex,
+  Heading,
+  Icon,
+  Wrap,
+  WrapItem
+} from '@chakra-ui/react'
 import PostPreview from 'components/PostPreview'
 import Post from 'interfaces/post'
 import { MdTravelExplore } from 'react-icons/md'
@@ -26,6 +34,18 @@ const Showcase = ({ allPosts }: Props) => {
           最近の投稿
         </Heading>
       </Center>
+
+      <Flex w={'full'} alignItems={'center'}>
+        <Wrap spacing={3} justify={'center'}>
+          {allPosts.map((post) => (
+            <WrapItem>
+              <PostPreview key={post.slug} post={post} showFootprint={false} />
+            </WrapItem>
+          ))}
+        </Wrap>
+      </Flex>
+
+      {/*}
       <Flex overflowX="auto" maxW="100%">
         <Box display="flex" minWidth="100%">
           <HStack>
@@ -35,6 +55,7 @@ const Showcase = ({ allPosts }: Props) => {
           </HStack>
         </Box>
       </Flex>
+      */}
     </Box>
   )
 }
