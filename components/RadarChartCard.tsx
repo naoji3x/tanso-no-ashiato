@@ -92,6 +92,7 @@ const RadarChartCard = ({
     responsive: true,
     scales: {
       r: {
+        min: 0,
         pointLabels: {
           font: { size: 14 }
         },

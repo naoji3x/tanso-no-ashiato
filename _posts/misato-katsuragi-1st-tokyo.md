@@ -6,22 +6,22 @@ lastName: 葛城
 age: 20s
 gender: female
 region: kanto
-tagline: 第三新東京のマンション三人暮らしのフットプリントは？
-excerpt: 5トン台ですが、第三新東京にしてはややフットプリントが高め？
-totalComment: 食が足を引っ張っています。また、車通勤のため移動のフットプリントが思ったより高めです。
-housingComment: 100%再生可能エネルギーでオール電化と想定したので、国民平均より約2t弱低い値になっています。さすが、第三新東京。
-mobilityComment: 愛車は電動化したアルピーヌ・A310とのこと。EVではあるものの、製造時のカーボンフットプリントがかさんでいます。
+tagline: ミサトさんが現在の東京で暮らしていたら、フットプリントは？
+excerpt: 日本平均の７トンを超過。生活の抜本的な見直しが必要です。
+totalComment: 住居、モノとサービスについては頑張っていますが、食と移動が大きく足を引っ張っています。
+housingComment: 通常の電力、オール電化と想定しました。国民平均より約1t低い値になっています。
+mobilityComment: 愛車はアルピーヌ・A310とのこと。ガソリン車での通勤がかなりの排出量となっています。
 foodComment: ランチはほぼ外食、夜も加持さんと居酒屋で一杯、となるとかなりの出費です。
 otherComment: 仕事人間で趣味は少なく、洋服もNERVから制服が支給されるため安上がりです。
-iconImage: /assets/posts/misato-katsuragi/misato-katsuragi.png
-backgroundImage: /assets/posts/misato-katsuragi/kunal-sahu-ieHfF8tDyn8-unsplash.jpg
-date: '2023-06-11T11:00:02'
+iconImage: /assets/posts/misato-katsuragi-1st-tokyo/misato-katsuragi-1st-tokyo.png
+backgroundImage: /assets/posts/misato-katsuragi-1st-tokyo/louie-martinez-IocJwyqRv3M-unsplash.jpg
+date: '2023-08-15T21:00:00'
 contentReferences:
   - <a href="https://ja.wikipedia.org/wiki/%E8%91%9B%E5%9F%8E%E3%83%9F%E3%82%B5%E3%83%88">Wikipedia（葛城ミサト）</a>
-  - <a href="https://ja.wikipedia.org/wiki/%E7%AC%AC3%E6%96%B0%E6%9D%B1%E4%BA%AC%E5%B8%82">Wikipedia（第三新東京）</a>
+  - <a href="https://ja.wikipedia.org/wiki/%E7%AC%AC3%E6%96%B0%E6%9D%B1%E4%BA%AC%E5%B8%82">Wikipedia（第３新東京）</a>
   -  <a href="https://www.env.go.jp/content/000122579.pdf">令和３年度家庭部門のCO2排出実態統計調査資料編（確報値）</a>
 imageReferences:
-  - 背景：<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/ieHfF8tDyn8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@kunalsahu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kunal Sahu</a>が撮影した写真
+  - 背景：<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/IocJwyqRv3M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/ja/@thetalkinglens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louie Martinez</a>が撮影した写真
 
 housingAnswer:
   housingSize: 4-room
@@ -31,7 +31,7 @@ housingAnswer:
   # 12で割って平均値を出して、3,767 / 12  = 314 ≒ 320 とした。
   # https://www.env.go.jp/content/000122579.pdf
   electricity:
-    electricityType: 100-renewable
+    electricityType: conventional
     monthlyConsumption: 320
     month: may #平均は5月とした。
   # gas:
@@ -46,9 +46,9 @@ mobilityAnswer:
   # NERVまで往復30kmとして、月20日 x 12ヵ月として、30 x 20 x 12 = 7200km
   # 週末に買い物等で、10kmとして、月5日 x 12ヵ月として、10 x 5 x 12 = 600km
   privateCarAnnualMileage: 7800
-  carType: ev
+  carType: gasoline
   carPassengers: '1'
-  carCharging: charge-almost-at-home
+  carCharging: unknown
   trainWeeklyTravelingTime: 0
   trainAnnualTravelingTime: 0
   busWeeklyTravelingTime: 0
@@ -86,20 +86,20 @@ otherAnswer:
 
 ## はじめに
 
-第三新東京の生活を推定すべく、葛城ミサトさんにモデルになってもらいました。各種前提条件は[Wikipedia](https://ja.wikipedia.org/wiki/%E8%91%9B%E5%9F%8E%E3%83%9F%E3%82%B5%E3%83%88)を参考にしています。また、プロフィール画像については、[『エヴァンゲリオン』シリーズのファン創作物の公開に関するガイドライン](https://www.khara.co.jp/guideline/)に基づき、
+現在の東京（第一東京）と第三新東京の暮らしのフットプリントの違いを、葛城ミサトさんにモデルになってもらって推定しました。ミサトさんが第一東京で同じような暮らしとしたと仮定し、フットプリントを推定しています。各種前提条件は[Wikipedia](https://ja.wikipedia.org/wiki/%E8%91%9B%E5%9F%8E%E3%83%9F%E3%82%B5%E3%83%88)を参考にしています。また、プロフィール画像については、[『エヴァンゲリオン』シリーズのファン創作物の公開に関するガイドライン](https://www.khara.co.jp/guideline/)に基づき、
 
 1. 個人のファン活動としての創作物を、無償・非商用で公開
 2. 全年齢向けSNS一般で公開（[総務省の定義](https://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/service/07.html)によるとGitHubもSNSと考えられるため、GitHubで公開）
 
 として、ファン創作物の一環として描きました。
 
-第三新東京はグリーン電力が普及しており、電力は100%再生可能エネルギー、車も基本はEVという前提にしています。その割には3トンを達成できておらず、生活様式の見直しが必要そうです。
+車通勤と外食が多いことが結構効いて、日本平均より高めのフットプリントになっています。
 
 ## 前提条件
 
 ### 住居
 
-3LDKのマンションにシンジ、アスカと３人暮らしです。第三新東京自体が2015年目処着工ですので、断熱性能は断熱等級4級としています。電力は100%再生可能エネルギー、オール電化想定です。
+3LDKのマンションにシンジ、アスカと３人暮らしです。第３新東京自体が2015年目処着工ですので、断熱性能は断熱等級4級としています。電力は通常の電力、オール電化想定です。
 
 電気使用量は、[令和３年度家庭部門の CO2 排出実態統計調査資料編（確報値）](https://www.env.go.jp/content/000122579.pdf)に基づき、以下のように計算しています。
 
@@ -107,7 +107,7 @@ otherAnswer:
 
 ### 移動
 
-通勤はNERVまで往復30kmと想定して、月20日勤務とし、30km x 20日 x 12か月 = 7,200km。また、週末に買い物等で10m程度移動すると想定して、10km x 月5日程度 x 12ヵ月 = 600km、合わせて7,800kmとしました。愛車は電動化したアルピーヌ・A310。フェラーリ328やガソリンエンジンのアルピーヌ・A310に乗っていることもあったそうですが、ミサトさんにはEVの加速の方が合ってそうですね。
+通勤はNERVまで往復30kmと想定して、月20日勤務とし、30km x 20日 x 12か月 = 7,200km。また、週末に買い物等で10m程度移動すると想定して、10km x 月5日程度 x 12ヵ月 = 600km、合わせて7,800kmとしました。愛車はアルピーヌ・A310。ガソリン車としてカーボンフットプリントを推定しました。
 
 ### 食
 
